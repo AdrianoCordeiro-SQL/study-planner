@@ -4,7 +4,7 @@ import themeReducer from "./slices/themeSlice";
 import analyticsReducer from "./slices/analyticsSlice";
 import { loadState, saveState, throttle } from './localStorage';
 
-const persistedState = loadState();
+const preloadedState = loadState();
 
 export const store = configureStore({
   reducer: {
